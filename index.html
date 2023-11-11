@@ -104,7 +104,7 @@ class Birthday {
     for (let firework of this.fireworks) firework.update(delta)
 
     // if enough time passed... create new new firework
-    this.counter += delta * 3 // each second
+    this.counter += delta * 2 // each second
     if (this.counter >= 1) {
       this.fireworks.push(new Firework(
         random(this.spawnA, this.spawnB),
